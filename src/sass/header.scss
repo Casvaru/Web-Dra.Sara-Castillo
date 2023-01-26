@@ -1,0 +1,15 @@
+.header{
+    @include header;
+    @include transition;
+        & .header__logo{
+            height: 50px; width: auto;
+            margin: 5px 10px;
+        }
+        & .header__btnPrimario{
+            @include btn-primario($pstn: absolute, $mt: 13px,$mr: 85px,$t: 0 ,$r: 0, $fz:13px,$bg:$white,$color:$black, $fw:bold);
+            @include transition();
+        }
+}
+.headerSetActive{
+    background: red;
+}

@@ -1,0 +1,30 @@
+.mainSection4{
+    & .carousel{
+        @include carousel($h:600px, $mt:0px);
+            & .carousel__item{
+                @include carousel-item($h:400px);
+                & .carousel__item__foto{
+                    width: 100%; height: 80%;
+                    background: $white;
+                }
+                & .carousel__item__texto{
+                    width: 100%; height: 10%;
+                    text-align: center;
+                    margin-top: 10%;
+                    font-weight: bold;
+                }
+            }
+    }
+    & .mainSection4__background{
+        width: 100%; height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background-image: url("../img/03.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
+}

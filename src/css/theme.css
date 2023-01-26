@@ -1,0 +1,18 @@
+@font-face {
+  font-family: lora;
+  src: url(../font/Lora-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: lora;
+  src: url(../font/Lora-Bold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: lora;
+  src: url(../font/Lora-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=theme.css.map */

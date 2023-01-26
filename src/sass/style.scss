@@ -1,0 +1,37 @@
+@import'./theme.scss';
+@import './mixins.scss';
+@import './components.scss';
+@import './navComponent.scss';
+@import './header.scss';
+@import './section1.scss';
+@import './section2.scss';
+@import './section3.scss';
+@import './section4.scss';
+@import './section5.scss';
+@import './footer.scss';
+@import'./scrollBar.scss';
+*{
+    @include reset;
+}
+#app{
+    height: 100vh;
+    // scroll-snap-type: y mandatory;
+    overflow: hidden auto;
+    margin: auto;
+    max-width: 2500px;
+        @media(min-width:1024px){
+            scroll-snap-type: none;
+        }
+}
+.mainSection{
+    @include section($bg: $black);
+    &:nth-child(1){
+        background: $white;
+    }
+    &:nth-child(3){
+        background: $black-7a;
+    }
+    &:nth-child(4){
+        background: $black-7a;
+    }
+}

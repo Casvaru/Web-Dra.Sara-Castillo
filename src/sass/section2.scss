@@ -1,0 +1,31 @@
+.mainSection2{
+    
+    & .mainSection2__container{
+        width: 220px; height: 220px;
+        margin: auto;
+        background: $white;
+        border-radius: 50%;
+        position: relative;
+        margin-top: 30px;
+        @media(min-width:768px){
+            background: white;
+            width: 220px; height: 220px;
+        }
+            & .mainSection2__containerFoto{
+                width: 100%; height: auto;
+                margin-top: -20px; margin-left: -10px;
+                position: absolute;
+            }
+    }
+    & .mainSection2__p{
+        color: $white;
+        width: 90%;
+        padding: 30px;
+        margin: auto;
+        text-align: justify;
+        @media(min-width:768px){
+            margin-top: 20px;
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: lora;
+    src: url(../font/Lora-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: lora;
+    src: url(../font/Lora-Bold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: lora;
+    src: url(../font/Lora-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+//---------------------------------------------//
+
+$white:rgb(255, 255, 255);
+$white-0a:rgba(255, 255, 255, 0);
+$white-1a:rgba(255, 255, 255, .1);
+$white-3a:rgba(255, 255, 255, .3);
+$white-5a:rgba(255, 255, 255, .5);
+$white-9a:rgba(255, 255, 255, .9);
+$black:rgb(0, 0, 0);
+$bg-black:rgb(21, 20, 21);
+$black-1a:rgba(0, 0, 0, .1);
+$black-3a:rgba(0, 0, 0, .3);
+$black-5a:rgba(0, 0, 0, .5);
+$black-7a:rgba(0, 0, 0, .7);
+$black-9a:rgba(0, 0, 0, .9);
+
+$clr-main-3a:rgba(217, 173, 38, .5);
+$clr-main-7a:rgba(217, 173, 38, .7);
+$clr-main:#d9ad26;
+$clr-main-hover:#886c18;
+$clr-whatsapp:#25D366;

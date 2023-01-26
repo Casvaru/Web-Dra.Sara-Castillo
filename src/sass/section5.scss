@@ -1,0 +1,19 @@
+.mainSection5{
+    position: relative;
+    & .mainSection__container{
+        @include containerGlass($pstn:absolute,$w:90%, $h:25%,$r:0,$b:0,$mr:5% !important, $mb:5% !important);
+        z-index: 1;
+        padding: 20px;
+        min-height: 180px;
+        max-width: 370px;
+        & .mainSection__p{
+            padding: 5px;
+            color: $white;
+        }
+    }
+    & .mainSection5__map{
+        width: 100%; height: calc(100% - 60px);
+        position: absolute;
+        bottom: 0;
+    }
+}

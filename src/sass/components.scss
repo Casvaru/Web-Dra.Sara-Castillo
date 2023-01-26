@@ -1,0 +1,47 @@
+.btnSecundario{
+    @include btn-secundario;
+    @include transition();
+}
+.btnMenu{
+    @include btn-menu;
+    @include transition();
+        & .btnMenu__line{
+            @include transition();
+        }
+        &:hover .btnMenu__line:nth-child(1) , &:hover .btnMenu__line:nth-child(2) , &:hover .btnMenu__line:nth-child(3){
+            @include menu-line(30px);
+        }
+        & .btnMenu__line:nth-child(1){
+            @include menu-line(30px);
+            margin-top: 3px;
+        }
+        & .btnMenu__line:nth-child(2){
+            @include menu-line(25px);
+        }
+        & .btnMenu__line:nth-child(3){
+            @include menu-line(20px);
+        }
+}
+.lineSetActive{
+    transform: rotate(45deg);
+    transform-origin: left;
+    margin-right: -2px;
+}
+.lineSetActive2{
+    opacity: 0;
+}
+.lineSetActive3{
+    transform: rotate(-45deg);
+    transform-origin: left;
+    width: 30px !important;
+    margin-right: -2px;
+    margin-top: 1px;
+}
+.flechaScroll{
+    @include flecha;
+    overflow-y: hidden;
+    @include animation-jump;
+}
+.CompTitulo{
+    @include seccion-titulo;
+}

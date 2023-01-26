@@ -1,0 +1,79 @@
+.mainSection3{
+        & .containerCategorias{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            & .containerCategorias__servicio1{
+                @include btn-primario();
+            }
+            & .containerCategorias__servicio2{
+                @include btn-secundario($color:$white, $border:1px solid $white);
+            }
+        }
+        & .container__carousel{
+            width: 100%; height: 500px;
+            position: absolute;
+            overflow: hidden;
+            & .carousel:nth-child(2){
+                clip-path: circle(0% at 50% 50%);
+                margin-top: -600px;
+            }
+        }
+    & .carousel{
+        @include carousel($h:600px, $mt:0px);
+        transition: .5s ease-in;
+        & .carousel__item{
+                overflow: hidden;
+                @include carousel-item($h:400px);
+                    & .carousel__item__foto{
+                        width: 100%; height: 80%;
+                    }
+                    & .carousel__item__texto{
+                        width: 100%; height: 10%;
+                        text-align: center;
+                        margin-top: 10%;
+                        font-weight: bold;
+                    }
+            }
+    }
+    & .carousel{
+        & .carousel__item__foto1 , .carousel__item__foto2 , .carousel__item__foto3 , .carousel__item__foto4 ,.carousel__item__foto5 , .carousel__item__foto6{
+            width: 100%; height: 100%;
+            background-image: url("../img/servicios/03.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    & .carousel2{
+        & .carousel__item__foto1 , .carousel__item__foto2 , .carousel__item__foto3 , .carousel__item__foto4 ,.carousel__item__foto5 , .carousel__item__foto6{
+            width: 100%; height: 100%;
+            background-image: url("../img/servicios/04.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    & .mainSection3__background{
+        width: 100%; height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        background-image: url("../img/02.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: grayscale(100%);
+    }
+}
+.showCarousel{
+    clip-path: circle(100% at 50% 50%) !important;
+    transition: .5s ease-in;
+}
+.hiddenCarousel{
+    clip-path: circle(0% at 50% 50%) !important;
+    transition-delay: .5s;
+}

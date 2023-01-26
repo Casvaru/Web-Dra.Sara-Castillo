@@ -1,0 +1,61 @@
+.containerMenu__nav{
+    position: fixed;
+    width: 100%; height: 100%;
+    right: 0;
+    background: $black;
+    top: 0;
+    clip-path: circle(20px at calc(100% + 50px) calc(0% - 100px));
+    z-index: 5;
+    @media(min-width:768px){
+    max-width: 350px;
+    }
+    @include transition(.5s);
+        & .containerMenu__ul{
+            text-align: center;
+            display: block;
+            & li:nth-child(1){
+                margin-top: 100px;
+            }
+            & .containerMenu__a{
+                width: 100%;
+                display: block;
+                font-size: 1.125em;
+                padding: 25px 0px;
+                color: $white;
+                font-weight: bold;
+                position: relative;
+                    &::before{
+                        content: "";
+                        width: 0px;
+                        height: 100%;
+                        background: $clr-main-3a;
+                        position: absolute;
+                        left: 0; top: 0;
+                        opacity: 0;
+                        @include transition;
+                    }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        & .containerMenu__social{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            gap: 30px;
+            margin-top: 50px;
+                & .containerMenu__socialIcons{
+                    height: 100%;
+                    border-bottom: 3px solid $clr-main;
+                }
+        }
+}
+.containerMenu--Active{
+    clip-path: circle(100% at 50% 50%) !important;
+    opacity: 1;
+}

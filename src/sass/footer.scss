@@ -1,0 +1,100 @@
+.footer{
+    width: 100%; height: 650px;
+    background: $black;
+    scroll-snap-align: center;
+    align-content: center;
+    @media(min-width:768px){
+        height: 420px;
+    }
+    & .container{
+        width: 100%; height: 300px;
+        & .container__logo{
+         width: 230px; height: auto;
+         margin: auto; display: block;
+         padding: 40px;
+         @media(min-width:768px){
+            width: 150px; height: auto;
+            padding: 20px; margin-left: 10%;
+         }
+        }
+        & .container__info{
+            width: 100%;
+            display: block;
+            color: $white;
+                & .container__infoData{
+                    width: 90%;
+                    margin-left: 5%;
+                    @media(min-width:768px){
+                        display: inline-block;
+                        float: left;
+                        width: 50%;
+                        display: inline-block;
+                    }
+                    & .container__icon{
+                        display: inline-block;
+                        margin-bottom: 15px;
+                    }
+                        & .container__infoParrafo{
+                            margin-left: 10px;
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+                }
+        }
+        & .containerNav{
+            display: none;
+        }
+        & .containerBotones{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            & .containerBotones__btnPrimario:nth-child(1){
+                @include btn-primario($bg:$white, $color:$black)
+            }
+            & .containerBotones__btnPrimario:nth-child(2){
+                @include btn-primario($bg:$clr-whatsapp, $color:$black)
+            }
+            @media(min-width:768px){
+                width: 40%;
+            }
+        }
+        & .containerRedes{
+            color: $white;
+            display: inline-block;
+            width: 100%;
+            @media(min-width:768px){
+                width: 40%;
+            }
+                & .containerRedes__titulo{
+                    text-align: center;
+                    padding: 20px;
+                    font-size: 16px;
+                }
+                & .containerRedes__container{
+                    display: flex;
+                    width: 80%; margin-left: 10%;
+                    justify-content: space-around;
+                    @media(min-width:768px){
+                        justify-content: center;
+                        gap: 40px;
+                    }
+                        & .containerRedes__containerIcon{
+                            border-bottom: 2px solid $clr-main;
+                        }
+                }
+        }
+        & .containerCopy{
+            text-align: center;
+                & .containerCopy__texto{
+                    color: $white-5a;
+                    padding: 20px;
+                    font-weight: 400;
+                    @media(min-width:768px){
+                        margin-top: 20px;
+                    }
+                }
+        }
+    }
+}
